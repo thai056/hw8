@@ -20,7 +20,7 @@ router.route('/bears')
     // insert a new bear
     .post((req, res) => {
         var bear = {};
-        bear.id = bears[bears.length - 1].id + 1;
+        bear.id = bears.length > 0 ? bears[bears.length - 1].id + 1 : 0;
         bear.name = req.body.name
         bear.weight = req.body.weight
         bear.img = req.body.img
