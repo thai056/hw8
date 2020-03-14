@@ -18,7 +18,7 @@ jobs:
       - image: circleci/node:10.16.3
     steps:
       - checkout
-      - run: ssh -oStrictHostKeyChecking=no -v $SERVER_USER@$SERVER_IP "./deploy_project.sh"
+      - run: ssh -oStrictHostKeyChecking=no -v $SERVER_USER@$SERVER_IP "./deploy-project.sh"
   
 workflows:
   version: 2
