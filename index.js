@@ -11,7 +11,8 @@ app.use('/api', bodyParser.urlencoded({ extended: false }), router);
 
 let bears = [
     { 'id': 0, 'name': 'pooh', 'weight': 211, 'img': 'https://lumiere-a.akamaihd.net/v1/images/c94eed56a5e84479a2939c9172434567c0147d4f.jpeg?region=0,0,600,600' },
-    { 'id': 1, 'name': 'vinnie', 'weight': 111, 'img': 'https://cdn2.mhpbooks.com/2018/07/winnie_pooh_PNG37592.png' }
+    { 'id': 1, 'name': 'vinnie', 'weight': 111, 'img': 'https://cdn2.mhpbooks.com/2018/07/winnie_pooh_PNG37592.png' },
+    { 'id': 2, 'name': 'test', weight: 999, img: ''}
 ];
 
 router.route('/bears')
